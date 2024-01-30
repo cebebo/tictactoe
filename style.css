@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(0, 0, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    border-left: 0px;
+}
+
+#gamefield {
+    border: 0; /* Setze die Randbreite auf 0, um den Außenrahmen zu verbergen */
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    cursor: pointer; /* Ändere den Cursor auf einen Zeiger */
+    transition: background-color 0.3s; /* Füge eine sanfte Übergangsanimation hinzu */
+}
+
+/* Färbe das Feld heller, wenn es gehovert wird */
+td:hover {
+    background-color: rgb(62, 62, 211);
+}
+
+td:not(:first-child) {
+    border-left: 5px solid gold;
+}
+
+tr:not(:first-child) td {
+    border-top: 5px solid gold;
+}
+
